@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: inhabitent
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -225,6 +225,9 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+body {
+  font-size: 40px; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -666,3 +669,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body {
+  font-size: 16px; }
+
+.home {
+  min-width: 1120px; }
+
+.product-info .container {
+  margin-left: 60px;
+  margin-right: 60px; }
+
+.fa-phone {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg); }
+
+.fab,
+.fas {
+  font-size: 1.5rem;
+  margin-right: .5rem; }

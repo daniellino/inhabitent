@@ -61,3 +61,30 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+body {
+    font-size: 16px;
+}
+
+#masthead {}
+
+.home {
+    min-width: 1120px;
+}
+
+.product-info .container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.fa-phone {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+.fab,
+.fas {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
