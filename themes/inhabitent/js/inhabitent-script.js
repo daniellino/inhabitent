@@ -1,10 +1,10 @@
-(function($) {
+// (function($) {
 
 
 
-    //all of your script goes here
+//     //all of your script goes here
 
 
 
-    $('body').append('hellooooooooooooooooooooooooooooooooooooooooooooo');
-})(jQuery);
+//     $('body').append('hellooooooooooooooooooooooooooooooooooooooooooooo');
+// })(jQuery);
