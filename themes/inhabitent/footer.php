@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div class="site-info">
-			<div class="container">copyright &copy 2017 inhabitent</div>
+			<div class="container">copyright &copy 2018 inhabitent</div>
 		</div>
 		<!-- .site-info -->
 	</footer>
