@@ -689,3 +689,17 @@ body {
 .fas {
   font-size: 1.5rem;
   margin-right: .5rem; }
+
+.site-info {
+  text-transform: uppercase; }
+
+.footer-blocks h3 {
+  text-transform: uppercase; }
+
+.footer#colophon.site-footer {
+  background-image: url(inhabitent/assets/images/dark-wood@2x.png) no-repeat center; }
+
+.site-footer {
+  background: url(../../assets/images/dark-wood.png);
+  background-size: 512px 512px;
+  color: #fff; }
