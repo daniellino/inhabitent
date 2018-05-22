@@ -679,6 +679,11 @@ object {
 body {
   font-size: 16px; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
 .home-banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
@@ -690,7 +695,7 @@ body {
 */
 .latest-adventures ul {
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 250px 250px;
   grid-gap: 1em;
   background-color: #7cb5f5; }
@@ -718,9 +723,6 @@ body {
 /**
 *grid for Latest adventure
 */
-.home {
-  min-width: 1120px; }
-
 .product-info .container {
   margin-left: 60px;
   margin-right: 60px; }
@@ -751,3 +753,11 @@ h3 {
   background: url(../../assets/images/dark-wood.png);
   background-size: 512px 512px;
   color: #fff; }
+
+.footer-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
