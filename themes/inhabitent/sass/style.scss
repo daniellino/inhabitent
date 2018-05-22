@@ -65,7 +65,24 @@ body {
     font-size: 16px;
 }
 
-//urls
+.site-header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.main-navigation {
+    clear: both;
+    display: block;
+    width: auto;
+    li {
+        float: left;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -76,6 +93,13 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4) 0), #969696 $url_0 no-repeat top;
     background-size: cover;
     height: 100vh;
+}
+
+.product-type-block-wrapper {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .latest-adventures {
@@ -101,8 +125,22 @@ body {
         line-height: 1;
         overflow: hidden;
         position: relative;
-        width: 100%;
+        img {
+            left: 50%;
+            max-height: 620px;
+            max-width: none;
+            position: absolute;
+            top: 75%;
+            transform: translate(-50%, -50%);
+            width: auto;
+        }
     }
+}
+
+.adventure-title {
+    margin: 1.5rem;
+    position: absolute;
+    z-index: 2;
 }
 
 .entry-title {
@@ -132,14 +170,8 @@ li {
     list-style-type: none;
 }
 
-.site-info {
-    text-transform: uppercase;
-}
-
-h2 {
-    text-transform: uppercase;
-}
-
+.site-info,
+h2,
 h3 {
     text-transform: uppercase;
 }

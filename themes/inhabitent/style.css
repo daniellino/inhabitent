@@ -676,6 +676,27 @@ object {
 body {
   font-size: 16px; }
 
+.site-header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red; }
+
+.main-navigation {
+  clear: both;
+  display: block;
+  width: auto; }
+  .main-navigation li {
+    float: left;
+    padding-left: 1.5rem;
+    position: relative; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -686,6 +707,15 @@ body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 0), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
   background-size: cover;
   height: 100vh; }
+
+.product-type-block-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
 
 .latest-adventures ul {
   display: grid;
@@ -704,8 +734,21 @@ body {
 .latest-adventures li {
   line-height: 1;
   overflow: hidden;
-  position: relative;
-  width: 100%; }
+  position: relative; }
+  .latest-adventures li img {
+    left: 50%;
+    max-height: 620px;
+    max-width: none;
+    position: absolute;
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: auto; }
+
+.adventure-title {
+  margin: 1.5rem;
+  position: absolute;
+  z-index: 2; }
 
 .entry-title {
   margin: 1.5rem;
@@ -729,12 +772,8 @@ body {
 li {
   list-style-type: none; }
 
-.site-info {
-  text-transform: uppercase; }
-
-h2 {
-  text-transform: uppercase; }
-
+.site-info,
+h2,
 h3 {
   text-transform: uppercase; }
 
