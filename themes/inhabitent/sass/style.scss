@@ -1,7 +1,7 @@
 /*!
 Theme Name: inhabitent
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Daniel Hamidi
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -63,6 +63,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page-templates";
 body {
     font-size: 16px;
+}
+
+.home-banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4) 0, rgba(0, 0, 0, .4)), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
+    background-size: cover;
+    height: 100vh;
 }
 
 
