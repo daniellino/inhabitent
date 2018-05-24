@@ -41,7 +41,8 @@ hr {
 
 ul,
 ol {
-    margin: 0 0 $base__space-unit ($base__space-unit * 2);
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 ul {
@@ -52,25 +53,12 @@ ol {
     list-style: decimal;
 }
 
-li>ul,
-li>ol {
-    margin-bottom: 0;
-    margin-left: $base__space-unit;
-}
-
 dt {
     font-weight: bold;
 }
 
 dd {
     margin: 0 $base__space-unit $base__space-unit;
-}
-
-img {
-    height: auto;
-    /* Make sure images are scaled correctly. */
-    max-width: 100%;
-    /* Adhere to container width. */
 }
 
 table {

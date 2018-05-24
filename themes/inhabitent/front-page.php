@@ -66,6 +66,24 @@ get_header(); ?>
 
 			<div class="container">
 				<h2>Inhabitent Journal</h2>
+
+<!-- =================================================== -->
+				
+<?php
+   $args = array( 'post_title' => 'post', 'order' => 'ASC',numberposts =>2 );
+   $journal_posts = get_posts( $args ); // returns an array of posts
+?>
+<?php foreach ( $journalt_posts as $post ) : setup_postdata( $post ); ?>
+   <?php
+   if (has_post_thumbnail()):
+	 the_post_thumbnail(large); endif;?>
+
+   <?php echo get_the_title()?>
+
+<?php endforeach; wp_reset_postdata(); ?>
+
+<!-- ===================================================== -->
+
 				<ul>
 					<li>
 						<div class="journal-pic-wrapper">
