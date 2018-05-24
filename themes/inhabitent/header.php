@@ -46,13 +46,12 @@
 
 					</nav>
 					<?php get_search_form();?>
-				</div>
+				
 
 
 				<p class="site-description">
 					<?php bloginfo( 'description' ); ?>
 				</p>
-		</div>
-		<!-- #site-navigation -->
+			</div><!-- .container -->
 		</header>
 		<!-- #masthead -->

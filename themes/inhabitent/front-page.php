@@ -68,75 +68,37 @@ get_header(); ?>
 				<h2>Inhabitent Journal</h2>
 
 <!-- =================================================== -->
-				
-<?php
-   $args = array( 'post_title' => 'post', 'order' => 'ASC',numberposts =>2 );
-   $journal_posts = get_posts( $args ); // returns an array of posts
-?>
-<?php foreach ( $journalt_posts as $post ) : setup_postdata( $post ); ?>
-   <?php
-   if (has_post_thumbnail()):
-	 the_post_thumbnail(large); endif;?>
+<ul class="journal-entries">
+               <li>
+                   <?php
+                   $args = array( 'post_type' => 'post', 'order' => 'DESC', 'posts_per_page' => 3);
+                   $journal_posts = get_posts( $args );
+                   ?>
+                   <div class="seperate-entries">
+                   <?php foreach ($journal_posts as $post ) : setup_postdata ( $post ); ?>
+                   <?php
+                       if ( has_post_thumbnail() ) :
+                           the_post_thumbnail( 'large' );
+                       endif;
 
-   <?php echo get_the_title()?>
+                       // echo the_title;
+                       ?>
 
-<?php endforeach; wp_reset_postdata(); ?>
 
+                       <h2 class="journal-title"><?php the_title(); ?></h2>
+                       
+                       <div class="entry-meta">
+                               <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+                           </div><!-- .entry-meta -->
+                           
+                           <a href="<?php echo the_permalink(); ?>">Read More</a>
+                   </div>
+                   <div class="seperate-entries container">
+                   <?php endforeach; wp_reset_postdata(); ?>
+                   </div>
+               </li>
+           </ul>
 <!-- ===================================================== -->
-
-				<ul>
-					<li>
-						<div class="journal-pic-wrapper">
-							<img src="<?php echo get_template_directory_uri() . './assets/images/blog-photos/van-camper.jpg'; ?>" alt="Van camper at night">
-						</div>
-						<div class="journal-pic-wrapper">
-							<span class="journal-time-comment">
-								<span class="post-date">
-									<time class="entry-date published"></time>
-									<time class="updated"></time>
-								</span>
-								<h3 class="journal-pic-title">
-									<a href="#">Van Camping Photo Contest</a>
-								</h3>
-							</span>
-						</div>
-						<a href="#" class="journal-post-btn">Read Entry</a>
-					</li>
-					<li>
-						<div class="journal-pic-wrapper">
-							<img src="<?php echo get_template_directory_uri() . './assets/images/blog-photos/warm-cocktail.jpg'; ?>" alt="A cup of coffee on a grill">
-						</div>
-						<div class="journal-pic-wrapper">
-							<span class="journal-time-comment">
-								<span class="post-date">
-									<time class="entry-date published"></time>
-									<time class="updated"></time>
-								</span>
-								<h3 class="journal-pic-title">
-									<a href="#">Fireside Libations: 3 Warm Cocktail Recipes</a>
-								</h3>
-							</span>
-						</div>
-						<a href="#" class="journal-post-btn">Read Entry</a>
-					</li>
-					<li>
-						<div class="journal-pic-wrapper">
-							<img src="<?php echo get_template_directory_uri() . './assets/images/blog-photos/healthy-camp-food.jpg'; ?>" alt="A pan of vegetables cooking">
-						</div>
-						<div class="journal-pic-wrapper">
-							<span class="journal-time-comment">
-								<span class="post-date">
-									<time class="entry-date published"></time>
-									<time class="updated"></time>
-								</span>
-								<h3 class="journal-pic-title">
-									<a href="#">Van Camping Photo Contest</a>
-								</h3>
-							</span>
-						</div>
-						<a href="#" class="journal-post-btn">Read Entry</a>
-					</li>
-				</ul>
 			</div>
 		</section>
 		<!-- INHABITENT JOURNAL section end-->
