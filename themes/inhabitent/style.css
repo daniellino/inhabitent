@@ -458,7 +458,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -780,7 +780,6 @@ input[type=search] {
     color: white; }
 
 .site-header {
-  font-family: Novecento Sans Web, sans-serif;
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #323232;
   position: absolute;
@@ -886,9 +885,12 @@ li {
 h2,
 h3 {
   text-transform: uppercase;
-  white-space: nowrap; }
+  white-space: nowrap;
+  font-family: 'Novecentos', sans-serif; }
 
 .footer-blocks {
+  letter-spacing: 1px;
+  font-family: 'Merriweather', Courier, monospace;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,7 +898,11 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .footer-blocks h3 {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d99054; }
+  .footer-blocks span {
+    font-weight: 700; }
 
 .site-footer {
   background: url(../../assets/images/dark-wood.png);
@@ -906,3 +912,7 @@ h3 {
 .product-info .container {
   margin-left: 60px;
   margin-right: 60px; }
+
+.text-logo img {
+  height: 50px;
+  margin-top: 50px; }

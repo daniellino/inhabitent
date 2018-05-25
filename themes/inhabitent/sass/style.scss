@@ -122,7 +122,6 @@ input[type=search] {
 }
 
 .site-header {
-    font-family: Novecento Sans Web, sans-serif;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px #323232;
     position: absolute;
@@ -242,13 +241,21 @@ h2,
 h3 {
     text-transform: uppercase;
     white-space: nowrap;
+    font-family: 'Novecentos', sans-serif;
 }
 
 .footer-blocks {
+    letter-spacing: 1px;
+    font-family: 'Merriweather', Courier, monospace;
     display: flex;
     justify-content: space-between;
     h3 {
         text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $color__orange-brand;
+    }
+    span {
+        font-weight: 700;
     }
 }
 
@@ -261,4 +268,9 @@ h3 {
 .product-info .container {
     margin-left: 60px;
     margin-right: 60px;
+}
+
+.text-logo img {
+    height: 50px;
+    margin-top: 50px;
 }

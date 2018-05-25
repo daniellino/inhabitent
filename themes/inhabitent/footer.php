@@ -45,7 +45,7 @@
 					<p>
 						<span class="day-of-week">Saturday:</span> 10am to 2pm</p>
 					<p>
-						<spanclass="day-of-week">Sunday:</span> Closed</p>
+						<span class="day-of-week">Sunday:</span> Closed</p>
 				</div>
 			</div>
 
