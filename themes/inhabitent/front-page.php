@@ -31,7 +31,7 @@ get_header(); ?>
 
                if ( ! empty( $terms ) && ! is_wp_error ( $terms ) ) : ?>
 
-                   <div class="product-type-blocks">
+                   <div class="product-type-blocks container">
 
                    <?php foreach ( $terms as $term ) : ?>
 
@@ -42,7 +42,7 @@ get_header(); ?>
 
                    <p><?php echo $term->description; ?></p>
 
-                   <p>
+                   <p class = "btn-green">
                        <a href="<?php echo get_term_link( $term ); ?>" class="btn">
                            <?php echo $term->name; ?> Stuff</a>
                    </p>
@@ -58,7 +58,7 @@ get_header(); ?>
 			<!-- INHABITENT JOURNAL section start-->
 
 			<div class="container">
-				<h2>Inhabitent Journal</h2>
+				<h2 class = "big-title">Inhabitent Journal</h2>
 
 <!-- =================================================== -->
 <ul class="journal-entries">
@@ -99,7 +99,7 @@ get_header(); ?>
 		<section class="latest-adventures container">
 			<!-- LATEST ADVENTURES section start-->
 
-			<h2>Latest adventures</h2>
+			<h2 class = "big-title">Latest adventures</h2>
 			<ul>
 				<li>
 					<div class="adv-pic-wrapper">
