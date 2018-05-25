@@ -61,79 +61,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+@import "footer";
+@import "header";
 body {
     font-size: 16px;
-}
-
-.site-header .container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.site-title {
-    overflow: hidden;
-    height: 1px;
-    widows: 1px;
-}
-
-.site-branding .logo img {
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 50px;
-    margin-top: 36px;
-}
-
-.nav-search-wrapper {
-    display: flex;
-}
-
-.search-submit {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    &:hover {
-        border-color: transparent;
-        box-shadow: none;
-    }
-}
-
-input[type=search] {
-    border: none;
-    border-radius: 0;
-    background: transparent;
-}
-
-.main-navigation {
-    clear: both;
-    display: block;
-    width: auto;
-    margin-left: auto;
-    li {
-        float: left;
-        padding-left: 1.5rem;
-        position: relative;
-    }
-    a {
-        color: white;
-    }
-}
-
-.site-header {
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px #323232;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1120px;
 }
 
 .home-banner {
@@ -246,6 +177,7 @@ h3 {
     letter-spacing: 1px;
     font-family: 'Merriweather', Courier, serif;
     display: flex;
+    height: 250px;
     justify-content: space-between;
     h3 {
         text-transform: uppercase;
@@ -280,9 +212,10 @@ h3 {
 .text-logo img {
     height: 50px;
     margin-top: 50px;
+    margin-left: 181px;
 }
 
-.btn-green {
+.btn {
     background: #248a83;
     border: none;
     border-radius: 0;
@@ -299,6 +232,14 @@ h3 {
     max-width: 145px;
 }
 
+.product-type-block-wrapper:hover {
+    border-color: $color__orange-brand;
+}
+
+.btn-link a:hover {
+    background: $color__btn-green-hover;
+}
+
 .product-type-block-wrapper {
     display: grid;
     border: 1px solid #e1e1e1;
@@ -310,14 +251,6 @@ h3 {
 }
 
 .shop-stuff>h2 {
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    font-size: 2.4rem;
-    font-weight: 400;
-}
-
-.big-title {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;

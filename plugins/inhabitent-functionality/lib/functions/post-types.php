@@ -42,7 +42,7 @@ function inhabitent_register_product() {
 		'label'                 => 'Product',
 		'description'           => 'Products are things that inhabitent',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'author', 'revisions' ),
+		'supports'              => array( 'title', 'editor', 'author', 'thumbnail', 'revisions' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

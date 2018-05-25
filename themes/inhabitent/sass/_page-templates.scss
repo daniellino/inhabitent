@@ -2,4 +2,20 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
+
+// The main content section
+.archive,
+.blog {
+    .content-area {
+        width: 74%;
+        display: inline-block;
+    }
+    // The Sidebar
+    .widget-area {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}

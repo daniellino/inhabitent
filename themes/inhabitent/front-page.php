@@ -42,7 +42,7 @@ get_header(); ?>
 
                    <p><?php echo $term->description; ?></p>
 
-                   <p class = "btn-green">
+                   <p class = "btn-link">
                        <a href="<?php echo get_term_link( $term ); ?>" class="btn">
                            <?php echo $term->name; ?> Stuff</a>
                    </p>

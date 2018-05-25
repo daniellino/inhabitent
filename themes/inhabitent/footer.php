@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		<div class="site-info">
-			<div class="container">copyright &copy 2018 inhabitent</div>
+			<div class="copy-right">copyright &copy 2018 inhabitent</div>
 		</div>
 		<!-- .site-info -->
 	</footer>

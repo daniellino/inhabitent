@@ -470,9 +470,9 @@ textarea {
 a {
   color: #fff; }
   a:visited {
-    color: purple; }
+    color: #fff; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -666,6 +666,18 @@ a {
 .seperate-entries h2 {
   font-size: 0.5em; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px; }
+
+.big-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 2.4rem;
+  font-weight: 400; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -730,8 +742,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-body {
-  font-size: 16px; }
+.archive .content-area,
+.blog .content-area {
+  width: 74%;
+  display: inline-block; }
+
+.archive .widget-area,
+.blog .widget-area {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top; }
+
+.copy-right {
+  position: relative;
+  bottom: 40px;
+  text-align: center;
+  margin-top: 80px; }
 
 .site-header .container {
   -webkit-box-align: center;
@@ -763,6 +789,7 @@ body {
   display: flex; }
 
 .search-submit {
+  color: #fff;
   background: transparent;
   border: none;
   -webkit-box-shadow: none;
@@ -776,6 +803,18 @@ input[type=search] {
   border: none;
   border-radius: 0;
   background: transparent; }
+
+::-webkit-input-placeholder {
+  color: #f0e4d1; }
+
+:-ms-input-placeholder {
+  color: #f0e4d1; }
+
+::-ms-input-placeholder {
+  color: #f0e4d1; }
+
+::placeholder {
+  color: #f0e4d1; }
 
 .main-navigation {
   clear: both;
@@ -797,10 +836,8 @@ input[type=search] {
   right: 0;
   top: 0; }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1120px; }
+body {
+  font-size: 16px; }
 
 .home-banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), color-stop(0, rgba(0, 0, 0, 0.4))), #969696 url(../../assets/images/home-hero.jpg) no-repeat top;
@@ -904,6 +941,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 250px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -932,9 +970,10 @@ h3 {
 
 .text-logo img {
   height: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-left: 181px; }
 
-.btn-green {
+.btn {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -950,6 +989,12 @@ h3 {
   min-width: 145px;
   max-width: 145px; }
 
+.product-type-block-wrapper:hover {
+  border-color: #d99054; }
+
+.btn-link a:hover {
+  background: #19625d; }
+
 .product-type-block-wrapper {
   display: grid;
   border: 1px solid #e1e1e1;
@@ -960,13 +1005,6 @@ h3 {
   justify-items: center; }
 
 .shop-stuff > h2 {
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  font-size: 2.4rem;
-  font-weight: 400; }
-
-.big-title {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 60px;
