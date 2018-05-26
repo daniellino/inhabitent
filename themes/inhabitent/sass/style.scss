@@ -173,28 +173,6 @@ h3 {
     font-family: 'Novecentos', sans-serif;
 }
 
-.footer-blocks {
-    letter-spacing: 1px;
-    font-family: 'Merriweather', Courier, serif;
-    display: flex;
-    height: 250px;
-    justify-content: space-between;
-    h3 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        color: $color__orange-brand;
-    }
-    span {
-        font-weight: 700;
-    }
-}
-
-.site-footer {
-    background: $url_1;
-    background-size: 512px 512px;
-    color: white;
-}
-
 .product-info .container {
     margin-left: 60px;
     margin-right: 60px;
@@ -207,12 +185,6 @@ h3 {
     img {
         width: 70px;
     }
-}
-
-.text-logo img {
-    height: 50px;
-    margin-top: 50px;
-    margin-left: 181px;
 }
 
 .btn {

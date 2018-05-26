@@ -4,3 +4,35 @@
     text-align: center;
     margin-top: 80px;
 }
+
+.footer-blocks {
+    letter-spacing: .2px;
+    font-family: 'Merriweather', Courier, serif;
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $color__orange-brand;
+    }
+    span {
+        font-weight: 700;
+    }
+}
+
+.footer-block-item {
+    margin-top: 50px;
+}
+
+.site-footer {
+    background: $url_1;
+    background-size: 512px 512px;
+    color: white;
+}
+
+.text-logo img {
+    height: 50px;
+    margin-top: 24px;
+    margin-left: 200px;
+}

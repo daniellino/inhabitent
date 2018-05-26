@@ -663,9 +663,6 @@ a {
   width: 360px;
   height: 245px; }
 
-.seperate-entries h2 {
-  font-size: 0.5em; }
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -677,6 +674,24 @@ a {
   margin-bottom: 60px;
   font-size: 2.4rem;
   font-weight: 400; }
+
+.btn-black {
+  border: 1px solid #000;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.btn-black a {
+  color: #000;
+  text-align: center;
+  display: block;
+  height: auto; }
+
+.entry-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -742,22 +757,59 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.archive .content-area,
-.blog .content-area {
-  width: 74%;
-  display: inline-block; }
-
-.archive .widget-area,
-.blog .widget-area {
-  width: 25%;
-  display: inline-block;
-  vertical-align: top; }
+.archive,
+.blog {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1120px; }
+  .archive .content-area,
+  .blog .content-area {
+    width: 74%;
+    display: inline-block;
+    border-right: solid 1px black;
+    background: #d4f7cb; }
+  .archive .widget-area,
+  .blog .widget-area {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background: #aad2f3; }
 
 .copy-right {
   position: relative;
   bottom: 40px;
   text-align: center;
   margin-top: 80px; }
+
+.footer-blocks {
+  letter-spacing: .2px;
+  font-family: 'Merriweather', Courier, serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .footer-blocks h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d99054; }
+  .footer-blocks span {
+    font-weight: 700; }
+
+.footer-block-item {
+  margin-top: 50px; }
+
+.site-footer {
+  background: url(../../assets/images/dark-wood.png);
+  background-size: 512px 512px;
+  color: white; }
+
+.text-logo img {
+  height: 50px;
+  margin-top: 24px;
+  margin-left: 200px; }
 
 .site-header .container {
   -webkit-box-align: center;
@@ -828,13 +880,32 @@ input[type=search] {
   .main-navigation a {
     color: white; }
 
-.site-header {
+.site-header a {
+  color: blue; }
+
+.site-header .logo-white {
+  display: none; }
+
+.site-header .logo-green {
+  display: block; }
+
+.home .site-header,
+.page-template-about .site-header {
   text-transform: uppercase;
   text-shadow: 1px 1px 2px #323232;
   position: absolute;
   left: 0;
   right: 0;
   top: 0; }
+  .home .site-header a,
+  .page-template-about .site-header a {
+    color: white; }
+  .home .site-header .logo-white,
+  .page-template-about .site-header .logo-white {
+    display: block; }
+  .home .site-header .logo-green,
+  .page-template-about .site-header .logo-green {
+    display: none; }
 
 body {
   font-size: 16px; }
@@ -935,28 +1006,6 @@ h3 {
   white-space: nowrap;
   font-family: 'Novecentos', sans-serif; }
 
-.footer-blocks {
-  letter-spacing: 1px;
-  font-family: 'Merriweather', Courier, serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 250px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .footer-blocks h3 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #d99054; }
-  .footer-blocks span {
-    font-weight: 700; }
-
-.site-footer {
-  background: url(../../assets/images/dark-wood.png);
-  background-size: 512px 512px;
-  color: white; }
-
 .product-info .container {
   margin-left: 60px;
   margin-right: 60px; }
@@ -967,11 +1016,6 @@ h3 {
   grid-template-columns: repeat(4, 1fr); }
   .product-type-blocks img {
     width: 70px; }
-
-.text-logo img {
-  height: 50px;
-  margin-top: 50px;
-  margin-left: 181px; }
 
 .btn {
   background: #248a83;
