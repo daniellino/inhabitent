@@ -12,7 +12,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<!-- footer start -->
 
-		<div class="footer-blocks content-area">
+		<div class="footer-blocks content-whole">
 			<div class="footer-block-item">
 				<div class="contact">
 					<h3>Contact Info</h3>

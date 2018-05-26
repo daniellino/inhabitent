@@ -25,7 +25,7 @@
 			</a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="container content-area">
+				<div class="container content-whole">
 					<div class="site-branding">
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

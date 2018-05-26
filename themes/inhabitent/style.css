@@ -355,7 +355,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #acacac;
   /* Fallback for when there is no custom background color defined. */ }
 
 a {
@@ -683,10 +683,22 @@ a {
   display: block;
   height: auto; }
 
-.content-area {
+.content-whole {
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px; }
+
+.shop-stuff-product-wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+  .shop-stuff-product-wrapper .entry-header img {
+    width: 260px;
+    height: auto; }
+
+.hentry {
+  margin: 0 0 1.5rem;
+  background: lightblue; }
 
 /*--------------------------------------------------------------
 # Media
@@ -752,10 +764,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.site-main .content-area {
+.archive .content-area,
+.blog .content-area {
+  width: 74%;
+  display: inline-block;
+  border-right: solid 1px black;
+  background: #d4f7cb; }
+
+.archive .widget-area,
+.blog .widget-area {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  background: #aad2f3; }
+
+.site-main .content-whole {
   margin-left: auto;
   margin-right: auto;
   max-width: 1120px; }
+
+.hentry .entry-title {
+  color: white;
+  font-size: 60px; }
 
 .copy-right {
   position: relative;
@@ -793,7 +823,7 @@ object {
   margin-top: 24px;
   margin-left: 200px; }
 
-.site-header .container {
+.site-header .content-whole {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
