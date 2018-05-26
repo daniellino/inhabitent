@@ -25,19 +25,17 @@
 			</a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="container">
+				<div class="container content-area">
 					<div class="site-branding">
 						<div class="logo">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								
-							
+	
 						<img class="logo-white" src="<?php echo get_template_directory_uri() . './assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo"
 									alt="Inhabitent Logo" />
 									
 						<img class="logo-green"  src="<?php echo get_template_directory_uri() . './assets/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo"
 						alt="Inhabitent Logo" />			
 
-			
 								<h1 class="site-title">Inhabitent</h1>
 							</a>
 						</div>

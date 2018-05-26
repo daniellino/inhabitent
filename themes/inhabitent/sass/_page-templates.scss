@@ -6,22 +6,24 @@
 /* Front page */
 
 // The main content section
-.archive,
-.blog {
+// .archive,
+// .blog {
+//     .content-area {
+//         width: 74%;
+//         display: inline-block;
+//         border-right: solid 1px black;
+//         background: rgb(212, 247, 203);
+//     }
+//     // The Sidebar
+//     .widget-area {
+//         width: 25%;
+//         display: inline-block;
+//         vertical-align: top;
+//         background: rgb(170, 210, 243);
+//     }
+// }
+.site-main .content-area {
     margin-left: auto;
     margin-right: auto;
     max-width: 1120px;
-    .content-area {
-        width: 74%;
-        display: inline-block;
-        border-right: solid 1px black;
-        background: rgb(212, 247, 203);
-    }
-    // The Sidebar
-    .widget-area {
-        width: 25%;
-        display: inline-block;
-        vertical-align: top;
-        background: rgb(170, 210, 243);
-    }
 }
