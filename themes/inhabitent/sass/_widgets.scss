@@ -3,15 +3,40 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
-
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+    margin: 0 0 $base__space-unit;
+    /* Make sure select elements fit in widgets. */
+    select {
+        max-width: 100%;
+    }
 }
 
+
 /* Search widget. */
+
+.content-area {
+    border-right: 1px solid $color__background-hr;
+    padding-right: 5%;
+    width: 90%;
+}
+
 .widget_search .search-submit {
-	display: none;
+    display: none;
+}
+
+.search .widget-area {
+    padding-left: 70px;
+}
+
+#custom_html-2 .widget-title {
+    margin-top: 95px;
+}
+
+.custom-html-widget h2 {
+    font-size: .9rem;
+}
+
+.search-pagination {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    border-top: 1px solid $color__background-hr;
 }

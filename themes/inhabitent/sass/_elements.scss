@@ -33,13 +33,6 @@ q {
     }
 }
 
-hr {
-    background-color: $color__background-hr;
-    border: 0;
-    height: 1px;
-    margin-bottom: $base__space-unit;
-}
-
 ul,
 ol {
     margin-left: 0px;
@@ -70,7 +63,6 @@ table {
 //elements in journal page********************************
 .black-btn {
     border: 1px solid #000;
-    color: #000;
     padding: 12px 18px;
 }
 
@@ -79,6 +71,11 @@ a.read-more.black-btn {
     font-family: 'Novecento', sans-serif;
     text-transform: uppercase;
     font-size: .9rem;
+    &:hover {
+        color: $color__background-body;
+        background: $color__green-brand;
+        border: 1px solid $color__green-brand;
+    }
 }
 
 .blog {
@@ -112,3 +109,15 @@ a.read-more.black-btn {
 }
 
 //elements in journal page***************************
+//elements in search page***************************
+.search h1.page-title {
+    color: $color__text-main;
+    font-size: 2.3rem;
+    margin-top: 100px;
+    border-bottom: 1px solid $color__background-hr;
+}
+
+.search div.entry-summary {
+    font-family: 'Merriweather', serif;
+    padding-right: 66px;
+}

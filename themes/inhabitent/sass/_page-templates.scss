@@ -47,18 +47,22 @@
     }
 }
 
+// .prim-second-wrapper {
+//     margin-left: auto;
+//     margin-right: auto;
+//     max-width: 1120px;
+//     display: grid;
+//     grid-template-columns: 2fr 1fr;
+//     background: rgb(212, 247, 203);
+//     #primary .entry-content {
+//         width: 640px;
+//     }
+// }
 .prim-second-wrapper {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1120px;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 1rem;
-    // border-right: solid 1px $color__background-hr;
-    background: rgb(212, 247, 203);
-    #primary .entry-content {
-        width: 640px;
-    }
+    width: 1120px;
 }
 
 .products-grid-wrapper {
