@@ -13,32 +13,36 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
+				
+					<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					
 				?>
-
-
+				
 					<?php
                $terms = get_terms( array(
                    'taxonomy' => 'product_type',
                    'hide_empty' => 0,
-               ) );
+			   ) );
+			   
             //    print_r($terms);
 
                if ( ! empty( $terms ) && ! is_wp_error ( $terms ) ) : ?>
-						<?php foreach ( $terms as $term ) : ?>
+						<div class = "shop-top-menu-wrapper">
+							<!-- test class -->
+							<?php foreach ( $terms as $term ) : ?>
 						<a href="<?php echo get_term_link( $term ); ?>">
 							<?php echo $term->name; ?>
 						</a>
 						<?php endforeach; ?>
 
 						<?php endif; ?>
+						</div>
+						<!-- test class -->
 			</header>
 			<!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class="products-grid-wrapper">
+			<div class="products-grid-wrapper price-info-wrapper">
 				<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -47,17 +51,19 @@ get_header(); ?>
 						<a href="<?php echo esc_url( get_permalink()) ?>" alt="Product Image">
 							<?php the_post_thumbnail( 'large' ); ?>
 						</a>
-						
+
 						<?php endif; ?>
 					</header>
 					<!-- .entry-header -->
 
 					<div class="product-info">
-						<div class='product-price'>
+						<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
+						<p class="dots-inside"></p>
+						<p class='product-price'>
 							<?php
 								echo CFS()->get( 'price' );
 							?>
-						</div>
+						</p>
 					</div>
 
 				</article>

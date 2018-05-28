@@ -111,3 +111,63 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+//formating price info under the images in shop page
+//top menu for shop page*****************************
+.shop-top-menu-wrapper {
+    border-bottom: 1px dashed $color__background-hr;
+    padding-bottom: 20px;
+    a {
+        color: $color__green-brand;
+        font-size: 1.2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 100;
+        font-family: 'Novecento', sans-serif;
+        &:hover {
+            color: black;
+        }
+    }
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+//top menu for shop page*****************************
+.post-type-archive h1 {
+    color: $color__text-main;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.price-info-wrapper .product-info {
+    //imitating dots for price
+    .dots-inside {
+        width: auto;
+        border-bottom: 1px dotted $color__text-main;
+        flex: 1;
+        margin-bottom: 6px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    a {
+        color: #404040;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    background: $color__background-body;
+    font-family: 'Merriweather',
+    serif;
+    padding: 15px 5px 15px 5px;
+    border-top: 4px solid $color__background-hr;
+    border-right: 1px solid $color__background-hr;
+    border-bottom: 1px solid $color__background-hr;
+    border-left: 1px solid $color__background-hr;
+    display: flex;
+    justify-content: space-around;
+    p {
+        margin: 0;
+    }
+}
