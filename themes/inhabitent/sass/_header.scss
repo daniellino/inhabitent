@@ -16,7 +16,7 @@
     overflow: hidden;
     white-space: nowrap;
     width: 50px;
-    margin-top: 36px;
+    margin-top: 6px;
 }
 
 .nav-search-wrapper {
@@ -60,8 +60,13 @@ input[type=search] {
 }
 
 .site-header {
+    text-transform: uppercase;
+    border-bottom: 1px solid $color__background-hr;
+    .site-branding {
+        height: 50px;
+    }
     a {
-        color: blue;
+        color: $color__green-brand;
     }
     .logo-white {
         display: none;
@@ -72,16 +77,18 @@ input[type=search] {
 }
 
 .home,
-.page-template-about {
+.page-template-about,
+{
     .site-header {
+        border-bottom: none;
         text-transform: uppercase;
         text-shadow: 1px 1px 2px #323232;
         position: absolute;
         left: 0;
         right: 0;
-        top: 0;
+        top: 32px;
         a {
-            color: white;
+            color: $color__background-body;
         }
         .logo-white {
             display: block;
