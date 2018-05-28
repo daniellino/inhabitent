@@ -761,19 +761,27 @@ a {
   font-size: 2.4rem;
   font-weight: 400; }
 
-.btn-black {
-  border: 1px solid #000;
-  width: 160px;
-  height: 40px;
-  text-align: center;
-  text-transform: uppercase; }
-
+/**************************************************
+    * btn-black
+    ***************************************************/
 .btn-black a {
+  border: 1px solid #000;
   color: #000;
   text-align: center;
-  display: block;
-  height: auto; }
+  text-transform: uppercase;
+  text-align: center;
+  height: auto;
+  padding: 12px 18px;
+  font-size: .9rem;
+  font-family: 'Novecento', sans-serif; }
+  .btn-black a:hover {
+    color: #fff;
+    background: #248A83;
+    border: 1px solid #248A83; }
 
+/**************************************************
+    * btn-black
+    ***************************************************/
 .content-whole {
   margin-left: auto;
   margin-right: auto;

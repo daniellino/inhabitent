@@ -64,21 +64,29 @@
         font-size: 2.4rem;
         font-weight: 400;
     }
-    
-    .btn-black {
-        border: 1px solid #000;
-        width: 160px;
-        height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-    }
+    /**************************************************
+    * btn-black
+    ***************************************************/
     
     .btn-black a {
+        border: 1px solid #000;
         color: #000;
         text-align: center;
-        display: block;
+        text-transform: uppercase;
+        text-align: center;
         height: auto;
+        padding: 12px 18px;
+        font-size: .9rem;
+        font-family: 'Novecento', sans-serif;
+        &:hover {
+            color: $color__background-body;
+            background: $color__green-brand;
+            border: 1px solid $color__green-brand;
+        }
     }
+    /**************************************************
+    * btn-black
+    ***************************************************/
     
     .content-whole {
         margin-left: auto;
