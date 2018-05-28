@@ -660,7 +660,7 @@ a {
     max-width: 100%; }
 
 /* Search widget. */
-.content-area {
+.prim-second-wrapper .content-area {
   border-right: 1px solid #ccc;
   padding-right: 5%;
   width: 90%; }
@@ -668,8 +668,23 @@ a {
 .widget_search .search-submit {
   display: none; }
 
-.search .widget-area {
-  padding-left: 70px; }
+.widget-area {
+  padding-left: 70px;
+  width: 34%; }
+  .widget-area .tent-biz-hours-class,
+  .widget-area .textwidget {
+    font-family: 'Merriweather', serif; }
+    .widget-area .tent-biz-hours-class a,
+    .widget-area .textwidget a {
+      color: #248A83; }
+      .widget-area .tent-biz-hours-class a:hover,
+      .widget-area .textwidget a:hover {
+        color: #404040; }
+    .widget-area .tent-biz-hours-class .fas,
+    .widget-area .textwidget .fas {
+      font-size: 0.8rem; }
+  .widget-area .tent-biz-hours-class .day-of-week {
+    font-weight: 700; }
 
 #custom_html-2 .widget-title {
   margin-top: 95px; }

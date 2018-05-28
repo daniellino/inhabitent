@@ -13,7 +13,7 @@
 
 /* Search widget. */
 
-.content-area {
+.prim-second-wrapper .content-area {
     border-right: 1px solid $color__background-hr;
     padding-right: 5%;
     width: 90%;
@@ -23,8 +23,26 @@
     display: none;
 }
 
-.search .widget-area {
+.widget-area {
     padding-left: 70px;
+    width: 34%;
+    .tent-biz-hours-class,
+    .textwidget {
+        a {
+            color: $color__green-brand;
+            &:hover {
+                color: $color__text-main;
+            }
+        }
+        font-family: 'Merriweather',
+        serif;
+        .fas {
+            font-size: 0.8rem;
+        }
+    }
+    .tent-biz-hours-class .day-of-week {
+        font-weight: 700;
+    }
 }
 
 #custom_html-2 .widget-title {
