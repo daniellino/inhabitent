@@ -668,20 +668,27 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.icon-search {
+  font-size: 1rem; }
+
 .widget-area {
   padding-left: 70px;
   width: 34%; }
   .widget-area .tent-biz-hours-class,
-  .widget-area .textwidget {
+  .widget-area .textwidget,
+  .widget-area .widget_archive {
     font-family: 'Merriweather', serif; }
     .widget-area .tent-biz-hours-class a,
-    .widget-area .textwidget a {
+    .widget-area .textwidget a,
+    .widget-area .widget_archive a {
       color: #248A83; }
       .widget-area .tent-biz-hours-class a:hover,
-      .widget-area .textwidget a:hover {
+      .widget-area .textwidget a:hover,
+      .widget-area .widget_archive a:hover {
         color: #404040; }
     .widget-area .tent-biz-hours-class .fas,
-    .widget-area .textwidget .fas {
+    .widget-area .textwidget .fas,
+    .widget-area .widget_archive .fas {
       font-size: 0.8rem; }
   .widget-area .tent-biz-hours-class .day-of-week {
     font-weight: 700; }

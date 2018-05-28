@@ -23,11 +23,16 @@
     display: none;
 }
 
+.icon-search {
+    font-size: 1rem;
+}
+
 .widget-area {
     padding-left: 70px;
     width: 34%;
     .tent-biz-hours-class,
-    .textwidget {
+    .textwidget,
+    .widget_archive {
         a {
             color: $color__green-brand;
             &:hover {
