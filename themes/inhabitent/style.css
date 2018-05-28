@@ -397,6 +397,9 @@ table {
   border: 1px solid #000;
   padding: 12px 18px; }
 
+.blog .entry-header {
+  position: relative; }
+
 .blog .entry-meta {
   background: #248A83;
   color: #fff;
@@ -419,7 +422,9 @@ table {
   margin-top: 2.25rem;
   max-width: 40%;
   padding: .75rem 1.5rem;
-  position: absolute; }
+  position: absolute;
+  bottom: 0;
+  right: 0; }
   .blog .entry-header h2 a:hover {
     color: #f0e4d1; }
 
@@ -892,14 +897,24 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   grid-template-columns: 260px 260px 260px 260px;
-  grid-template-rows: 260px 260px 260px 260px;
   grid-gap: 1.5rem;
   margin-bottom: 4rem; }
-  .products-grid-wrapper .type-product {
-    border: 1px solid #e1e1e1;
-    background-color: #e1e1e1;
-    height: 250px;
+  .products-grid-wrapper .product-image-container {
+    height: 260px;
     overflow: hidden;
+    position: relative; }
+    .products-grid-wrapper .product-image-container img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+  .products-grid-wrapper .product-info {
+    border: 1px solid #e1e1e1;
+    background-color: #e1e1e1; }
+    .products-grid-wrapper .product-info .entry-title {
+      position: relative; }
+  .products-grid-wrapper .type-product {
     position: relative; }
   .products-grid-wrapper .type-product img {
     -o-object-fit: cover;

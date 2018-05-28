@@ -22,6 +22,7 @@
     max-width: 1120px;
 }
 
+// tag for... @TODO label post-23 e.g. where this comes from
 #post-23 {
     h1 {
         color: white;
@@ -70,14 +71,29 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 260px 260px 260px 260px;
-    grid-template-rows: 260px 260px 260px 260px;
+    // grid-template-rows: 260px 260px 260px 260px;
     grid-gap: 1.5rem;
     margin-bottom: 4rem;
-    .type-product {
+    .product-image-container {
+        height: 260px;
+        overflow: hidden;
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // max-width: 300px;
+        }
+    }
+    .product-info {
         border: 1px solid #e1e1e1;
         background-color: #e1e1e1;
-        height: 250px;
-        overflow: hidden;
+        .entry-title {
+            position: relative;
+        }
+    }
+    .type-product {
         position: relative;
     }
     .type-product img {
