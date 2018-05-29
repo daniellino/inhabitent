@@ -28,6 +28,7 @@
     background: transparent;
     border: none;
     box-shadow: none;
+    text-shadow: none;
     &:hover {
         border-color: transparent;
         box-shadow: none;
@@ -73,6 +74,19 @@ input[type=search] {
     }
     .logo-green {
         display: block;
+    }
+}
+
+.blog,
+.page-template-default,
+.archive,
+.post-template-default,
+.product-template-default,
+.search,
+.error404 {
+    .search-submit {
+        color: $color__green-brand;
+        text-shadow: none;
     }
 }
 

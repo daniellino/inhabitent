@@ -412,8 +412,7 @@ table {
   padding: 4px 17px; }
 
 .blog .entry-title {
-  font-family: 'Merriweather', serif;
-  color: #248A83; }
+  font-family: 'Merriweather', serif; }
 
 .blog img {
   height: auto;
@@ -1140,7 +1139,8 @@ object {
   background: transparent;
   border: none;
   -webkit-box-shadow: none;
-          box-shadow: none; }
+          box-shadow: none;
+  text-shadow: none; }
   .search-submit:hover {
     border-color: transparent;
     -webkit-box-shadow: none;
@@ -1186,6 +1186,16 @@ input[type=search] {
     display: none; }
   .site-header .logo-green {
     display: block; }
+
+.blog .search-submit,
+.page-template-default .search-submit,
+.archive .search-submit,
+.post-template-default .search-submit,
+.product-template-default .search-submit,
+.search .search-submit,
+.error404 .search-submit {
+  color: #248A83;
+  text-shadow: none; }
 
 .home .site-header,
 .page-template-about .site-header {
