@@ -74,9 +74,12 @@ table {
         background: $color__green-brand;
         color: $color__background-body;
         text-transform: uppercase;
-        max-width: 360px;
-        font-family: 'Novecento', sans-serif;
+        width: 370px;
+        font-family: 'Novecentos', sans-serif;
         position: absolute;
+        left: 379px;
+        bottom: 6px;
+        padding: 4px 17px;
     }
     .entry-title {
         font-family: 'Merriweather', serif;
@@ -87,14 +90,15 @@ table {
     }
     .entry-header h2 {
         background: $color__green-brand;
-        font-family: 'Novecento', sans-serif;
+        font-family: 'Novecentos', sans-serif;
         letter-spacing: 2px;
         margin-top: 2.25rem;
-        max-width: 40%;
+        // max-width: 40%;
+        width: 460px;
         padding: .75rem 1.5rem;
         position: absolute;
-        bottom: 0;
-        right: 0;
+        top: 0px;
+        right: 288px;
         & a:hover {
             color: $color__yellow-brand;
         }

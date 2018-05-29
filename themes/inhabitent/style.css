@@ -293,7 +293,7 @@ h5,
 h6 {
   clear: both;
   text-transform: uppercase;
-  font-family: 'Novecento', sans-serif;
+  font-family: 'Novecentos', sans-serif;
   letter-spacing: 2px; }
 
 /* Copy */
@@ -404,9 +404,12 @@ table {
   background: #248A83;
   color: #fff;
   text-transform: uppercase;
-  max-width: 360px;
-  font-family: 'Novecento', sans-serif;
-  position: absolute; }
+  width: 370px;
+  font-family: 'Novecentos', sans-serif;
+  position: absolute;
+  left: 379px;
+  bottom: 6px;
+  padding: 4px 17px; }
 
 .blog .entry-title {
   font-family: 'Merriweather', serif; }
@@ -417,14 +420,14 @@ table {
 
 .blog .entry-header h2 {
   background: #248A83;
-  font-family: 'Novecento', sans-serif;
+  font-family: 'Novecentos', sans-serif;
   letter-spacing: 2px;
   margin-top: 2.25rem;
-  max-width: 40%;
+  width: 460px;
   padding: .75rem 1.5rem;
   position: absolute;
-  bottom: 0;
-  right: 0; }
+  top: 0px;
+  right: 288px; }
   .blog .entry-header h2 a:hover {
     color: #f0e4d1; }
 
@@ -797,7 +800,7 @@ a.read-more {
   height: auto;
   padding: 12px 18px;
   font-size: .9rem;
-  font-family: 'Novecento', sans-serif; }
+  font-family: 'Novecentos', sans-serif; }
   .btn-black a:hover,
   a.read-more:hover {
     color: #fff;
@@ -819,6 +822,9 @@ a.read-more {
   .shop-stuff-product-wrapper .entry-header img {
     width: 260px;
     height: auto; }
+
+.type-post .entry-header {
+  margin-top: 3rem; }
 
 /*--------------------------------------------------------------
 # Media
@@ -911,6 +917,10 @@ object {
     text-align: center;
     font-size: 2rem; }
 
+.type-post .entry-content p:nth-child(2) {
+  margin-bottom: 5rem;
+  margin-top: 2rem; }
+
 .prim-second-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +996,7 @@ object {
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 100;
-    font-family: 'Novecento', sans-serif; }
+    font-family: 'Novecentos', sans-serif; }
     .shop-top-menu-wrapper a:hover {
       color: black; }
 
@@ -1032,7 +1042,7 @@ object {
   text-align: center;
   margin-top: 80px;
   text-transform: uppercase;
-  font-family: 'Novecento', sans-serif; }
+  font-family: 'Novecentos', sans-serif; }
 
 .footer-blocks {
   letter-spacing: .2px;
@@ -1246,7 +1256,7 @@ body {
   z-index: 2; }
 
 .entry-title {
-  margin: 1.5rem;
+  margin: 0px;
   position: relative;
   z-index: 2; }
 
@@ -1284,7 +1294,7 @@ li {
   border-radius: 0;
   color: #fff;
   cursor: pointer;
-  font-family: 'Novecento', sans-serif;
+  font-family: 'Novecentos', sans-serif;
   font-size: 14.4px;
   font-size: .9rem;
   line-height: 1;
