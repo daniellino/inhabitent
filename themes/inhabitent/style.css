@@ -1331,7 +1331,7 @@ input[type=search] {
 .post-template-default .entry-header {
   position: relative; }
 
-.entry-meta {
+.single-product .entry-meta {
   background: #248a83;
   color: #fff;
   text-transform: uppercase;
@@ -1386,13 +1386,9 @@ a.sharing-button {
   text-transform: uppercase;
   color: #248A83; }
 
-.single-product .entry-meta {
-  width: 370px;
-  font-family: Novecentos, sans-serif;
-  position: absolute;
-  left: 271px;
-  bottom: 6px;
-  padding: 4px 17px; }
+.single-product-flex-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
 
 body {
   font-size: 16px; }

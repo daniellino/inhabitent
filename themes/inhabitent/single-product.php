@@ -7,24 +7,21 @@
 
 get_header(); ?>
 
+	<!-- start of flex wrapper -->
 	<div id="primary" class="content-area content-whole">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
+				<header class="entry-header single-product-flex-wrapper">
 					<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 					<?php endif; ?>
 
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-					<div class="entry-meta">
-						<?php red_starter_posted_on(); ?> /
-						<?php red_starter_comment_count(); ?>
-						<?php red_starter_posted_by(); ?>
-					</div>
+				
 					<!-- .entry-meta -->
 				</header>
 				<!-- .entry-header -->
@@ -40,9 +37,7 @@ get_header(); ?>
 		?>
 				</div>
 				<!-- .entry-content -->
-				<button>
-					testing
-				</button>
+			
 
 				<footer class="entry-footer">
 					<?php red_starter_entry_footer(); ?>
@@ -50,8 +45,16 @@ get_header(); ?>
 				<!-- .entry-footer -->
 			</article>
 			<!-- #post-## -->
-
-
+			<div class="social-buttons">
+					
+					<a href="#" class="sharing-button">
+						<i class="fab fa-facebook-f"></i>Like</a>
+					<a href="#" class="sharing-button">
+						<i class="fab fa-twitter"></i>Tweet</a>
+					<a href="#" class="sharing-button">
+						<i class="fab fa-pinterest-square"></i>Pin</a>
+				</div>
+				
 			<?php the_post_navigation(); ?>
 
 

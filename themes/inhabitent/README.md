@@ -1,21 +1,44 @@
-# RED Starter
+# Project 4 - Inhabitent Co.
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+This is a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. using WordPress as a content management system.
 
-## Installation
+It is built on starter theme for RED Academy students.
 
-### 1. Download me (don't clone me!)
+## Technologies used
+CSS 3
+HHTML
+WORDPRESS
+JQuery
+WORDPRESS PLUGINS:
+- Custom Field Suite
+- Debug Bar
+- inhabitent Business Hours Widget
+- Kint PHP Debugger
+- Query Monitor
+- Show Current Template
+- WP Migrate DB
 
-Then add me to your `wp-content` directory.
+### Software
+- Visual Studio Code
+- Git
+- Google Chrome & it's Developer Tools
+- MAMP
 
-### 2. Rename the `redstarter-master` directory
+### Online Sources
+- Mozilla Developer Network (https://developer.mozilla.org/)
+- GitHub (https://github.com)
+- GenerateWP (https://generatewp.com)
+- WordPress Codex (https://codex.wordpress.org)
+- WordPress Template Hierarchy (https://wphierarchy.com/)
 
-Make sure that the theme directory name is project appropriate!
+### Style
+- Normalize CSS (https://necolas.github.io/normalize.css/)
+- @font-face
+- Font Squirrel (http://fontsquirrel.com/)
+- Sass features: nested rules, variables, mixins
 
-### 3. Install the dev dependencies
+### Learnings
+- Creating Wordpress custom fields
+- Creating Wordpress custom page templates
+- Populating Html using php predefined functions
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
