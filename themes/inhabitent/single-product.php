@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-whole">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -22,7 +22,7 @@ get_header(); ?>
 
 					<div class="entry-meta">
 						<?php red_starter_posted_on(); ?> /
-						<?php red_starter_comment_count(); ?> /
+						<?php red_starter_comment_count(); ?>
 						<?php red_starter_posted_by(); ?>
 					</div>
 					<!-- .entry-meta -->

@@ -160,6 +160,7 @@ get_header(); ?>
 		<!-- #main end -->
 		</div>
 		<!-- #primary end-->
+		<a href="#">More adventures</a>
 
 
 		<?php get_footer(); ?>
