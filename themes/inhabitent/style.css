@@ -358,7 +358,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #acacac;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
 a {
@@ -933,7 +933,7 @@ object {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
-      width: 520px;
+      width: 460px;
       height: auto; }
   .products-grid-wrapper .product-info {
     border: 1px solid #e1e1e1;
@@ -945,6 +945,15 @@ object {
   .products-grid-wrapper .type-product img {
     -o-object-fit: cover;
        object-fit: cover; }
+
+.product-grid-archive .entry-header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 460px;
+  height: auto; }
 
 .page-header {
   color: #fff;
@@ -1234,7 +1243,7 @@ body {
 
 .entry-title {
   margin: 1.5rem;
-  position: absolute;
+  position: relative;
   z-index: 2; }
 
 .fa-phone {

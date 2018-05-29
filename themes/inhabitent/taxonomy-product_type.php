@@ -22,7 +22,7 @@ get_header(); ?>
 
 			</header><!-- .page-header -->
 			
-			<div class="product-grid-archive"> <!--Parent for grid-->
+			<div class="product-grid-archive price-info-wrapper"> <!--Parent for grid-->
 
 			<?php /* brgining of the loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -42,11 +42,11 @@ get_header(); ?>
 				<?php endif; ?>
 			</header><!-- .entry-header -->
 
-			<div class="entry-content solid-border">
+			<div class="product-info">
 				
 				<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
-				<p class="dots"> <!--this thing has dots--></p>
-				<p ><?php echo CFS()->get( 'price' ); ?></p>
+				<p class="dots-inside"></p>
+				<p class = "product-price"><?php echo CFS()->get( 'price' ); ?></p>
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
 
