@@ -123,8 +123,8 @@ get_header(); ?>
 						<div class="adv-pic-wrapper">
 							<img src="<?php echo get_template_directory_uri() . './assets/images/adventure-photos/beach-bonfire.jpg'; ?>" alt="A bonfire with friends on the beach">
 							<div class="adventure-title">
-								<h3 class="entry-title">
-									<a href="#" class="adv-btn">Getting Back to Nature in a Canoe</a>
+								<h3 class="journal-pic-mid">
+									<a href="#" class="adv-btn">A Night with Friends at the Beach</a>
 								</h3>
 								<a href="#" class="white-btn">Read More</a>
 							</div>
@@ -134,8 +134,8 @@ get_header(); ?>
 						<div class="adv-pic-wrapper">
 							<img src="<?php echo get_template_directory_uri() . './assets/images/adventure-photos/mountain-hikers.jpg'; ?>" alt="Hikers taking in the view on a mountain">
 							<div class="adventure-title">
-								<h3 class="entry-title">
-									<a href="#" class="adv-btn">Getting Back to Nature in a Canoe</a>
+								<h3 class="journal-pic-small">
+									<a href="#" class="adv-btn">Taking in the View at Big Mountain</a>
 								</h3>
 								<a href="#" class="white-btn">Read More</a>
 							</div>
@@ -145,8 +145,8 @@ get_header(); ?>
 						<div class="adv-pic-wrapper">
 							<img src="<?php echo get_template_directory_uri() . './assets/images/adventure-photos/night-sky.jpg'; ?>" alt="Person star-gazing at the night sky">
 							<div class="adventure-title">
-								<h3 class="entry-title">
-									<a href="#" class="adv-btn">Getting Back to Nature in a Canoe</a>
+								<h3 class="journal-pic-small">
+									<a href="#" class="adv-btn">Star-Gazing at the Night Sky</a>
 								</h3>
 								<a href="#" class="white-btn">Read More</a>
 							</div>
