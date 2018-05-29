@@ -1,0 +1,63 @@
+        /*--------------------------------------------------------------
+# Error 404 page styling
+--------------------------------------------------------------*/
+        
+        .error-404 h1 {
+            color: $color__text-main;
+            font-size: 2.3rem;
+            margin-top: 90px;
+        }
+        
+        .error-404,
+        .widget-area h2 {
+            color: $color__purple-brand;
+        }
+        
+        .error-404 {
+            font-family: 'Merriweather', serif;
+            a {
+                color: $color__green-brand;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        
+        .error-404 .search-field {
+            padding: .3rem;
+            color: #666;
+            background-color: #f4f4f4;
+            border: 1px solid #e1e1e1;
+            border-radius: 0;
+        }
+        
+        .error-404 {
+             ::placeholder {
+                text-transform: none;
+                color: #666;
+                font-family: 'Merriweather', serif;
+            }
+        }
+        
+        .error-404 {
+            #archives-dropdown--1 {
+                font-family: Merriweather, serif;
+            }
+            .site-main {
+                border-right: 1px solid #ccc;
+                padding-right: 5%;
+                width: 90%;
+            }
+            .page-content {
+                margin-top: -2rem;
+                margin-bottom: 6.5rem;
+                line-height: 1.8rem;
+            }
+            .search-form {
+                margin-bottom: 3rem;
+            }
+        }
+        
+        .widget_recent_entries {
+            margin-bottom: 3rem;
+        }

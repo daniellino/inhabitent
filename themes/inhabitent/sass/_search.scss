@@ -1,0 +1,23 @@
+.search-results h1:nth-child(1) {
+    border-bottom: 1px solid #ccc;
+    margin-top: 50px;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
+
+.search-results .entry-header a {
+    color: $color__green-brand;
+    font-size: 2.2rem;
+    &:hover {
+        color: black;
+    }
+}
+
+.search-results .entry-summary {
+    margin-top: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.entry-summary p:nth-child(2) {
+    margin-top: 2rem;
+}

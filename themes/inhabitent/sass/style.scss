@@ -63,6 +63,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "page-templates";
 @import "footer";
 @import "header";
+@import "error404";
+@import "search";
 body {
     font-size: 16px;
 }

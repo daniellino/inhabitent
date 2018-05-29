@@ -8,8 +8,9 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-whole">
+<div class = "prim-second-wrapper ">
+	<!-- start of prim-second-wrapper div -->
+	<div id="primary" class="content-whole content-area ">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
@@ -52,4 +53,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_sidebar(); ?>
+</div>
+<!-- end of prim-second-wrapper div -->
 <?php get_footer(); ?>
