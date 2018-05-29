@@ -107,7 +107,36 @@ table {
     color: $color__text-main;
     font-size: 2.3rem;
     margin-top: 100px;
-    border-bottom: 1px solid $color__background-hr;
+    // border-bottom: 1px solid $color__background-hr;
+}
+
+.archive h1 {
+    color: $color__text-main;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-top: 110px;
+    text-align: center;
+}
+
+.taxonomy-explain {
+    //taxonomy explanation
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    color: $color__text-main;
+}
+
+.product-grid-archive {
+    //grid for taxonomy groupings
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 260px 260px 260px 260px;
+    grid-gap: 1.5rem;
+    margin-bottom: 4rem;
+    .entry-header {
+        height: 260px;
+        overflow: hidden;
+        position: relative;
+    }
 }
 
 .search div.entry-summary {

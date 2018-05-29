@@ -40,6 +40,9 @@ get_header(); ?>
 		?>
 				</div>
 				<!-- .entry-content -->
+				<button>
+					testing
+				</button>
 
 				<footer class="entry-footer">
 					<?php red_starter_entry_footer(); ?>

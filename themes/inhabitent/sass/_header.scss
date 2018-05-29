@@ -98,3 +98,15 @@ input[type=search] {
         }
     }
 }
+
+.site-header {
+    .search-form {
+        display: flex;
+    }
+    .search-field {
+        display: none;
+    }
+    .search-field-focus {
+        display: block;
+    }
+}

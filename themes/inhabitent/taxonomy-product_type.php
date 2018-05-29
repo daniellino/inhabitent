@@ -1,45 +1,70 @@
 <?php
 /**
- * The main template file.
+ * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Inhabitent_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-whole">
 		<main id="main" class="site-main" role="main">
 
-			<?php if ( have_posts() ) : ?>
-			<div class = "shop-stuff-product-wrapper">
-				<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text">
-						<?php single_post_title(); ?>
-					</h1>
-				</header>
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+		
+			<?php
+				$term = get_term_by( 'slug', get_query_var('term'), get_query_var('taxonomy'), get_query_var('description') );
+			?>
+			<h1 class="page-title"><?php echo $term->name;?></h1>
+			<p class="taxonomy-explain"><?php echo $term->description; ?></p>
+
+			</header><!-- .page-header -->
+			
+			<div class="product-grid-archive"> <!--Parent for grid-->
+
+			<?php /* brgining of the loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<header class="entry-header">
+			<?php if ( has_post_thumbnail() ) : ?>
+					<a href="<?php echo esc_url( get_permalink()) ?>" alt="Product Image"><?php the_post_thumbnail( 'large' ); ?></a>
 				<?php endif; ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+				
 
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
-
-				<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+				<?php if ( 'post' === get_post_type() ) : ?>
+				<div class="entry-meta">
+					<?php inhabitent_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php inhabitent_posted_by(); ?>
+				</div><!-- .entry-meta -->
 				<?php endif; ?>
-			</div>
+			</header><!-- .entry-header -->
 
-		</main>
-		<!-- #main -->
-	</div>
-	<!-- #primary -->
+			<div class="entry-content solid-border">
+				
+				<?php the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' ); ?>
+				<p class="dots"> <!--this thing has dots--></p>
+				<p ><?php echo CFS()->get( 'price' ); ?></p>
+			</div><!-- .entry-content -->
+		</article><!-- #post-## -->
 
 
-	<?php get_footer(); ?>
+			<?php endwhile; ?>
+
+			<?php the_posts_navigation(); ?>
+
+		<?php else : ?>
+
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+		<?php endif; ?>
+
+		</div>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+<?php get_footer(); ?>

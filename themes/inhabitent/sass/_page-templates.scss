@@ -83,6 +83,8 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 520px;
+            height: auto;
             // max-width: 300px;
         }
     }
@@ -160,7 +162,7 @@
     background: $color__background-body;
     font-family: 'Merriweather',
     serif;
-    padding: 15px 5px 15px 5px;
+    padding: 15px 15px;
     border-top: 4px solid $color__background-hr;
     border-right: 1px solid $color__background-hr;
     border-bottom: 1px solid $color__background-hr;
