@@ -435,7 +435,7 @@ table {
 
 .archive h1 {
   color: #404040;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   letter-spacing: 2px;
   margin-top: 110px;
   text-align: center; }
@@ -443,7 +443,11 @@ table {
 .taxonomy-explain {
   font-family: 'Merriweather', serif;
   font-weight: 100;
-  color: #404040; }
+  color: #404040;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 56px;
+  margin-bottom: -30px; }
 
 .product-grid-archive {
   display: grid;
@@ -452,7 +456,7 @@ table {
           justify-content: center;
   grid-template-columns: 260px 260px 260px 260px;
   grid-gap: 1.5rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 5rem; }
   .product-grid-archive .entry-header {
     height: 260px;
     overflow: hidden;
@@ -922,7 +926,7 @@ object {
           justify-content: center;
   grid-template-columns: 260px 260px 260px 260px;
   grid-gap: 1.5rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 5rem; }
   .products-grid-wrapper .product-image-container {
     height: 260px;
     overflow: hidden;
