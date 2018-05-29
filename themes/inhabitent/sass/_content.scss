@@ -54,7 +54,7 @@
     
     .seperate-entries img {
         width: 360px;
-        height: 245px;
+        height: 246px;
     }
     
     .big-title {
@@ -88,6 +88,40 @@
     /**************************************************
     * btn-black
     ***************************************************/
+    
+    .page-template-default .btn-black a {
+        position: absolute;
+        bottom: 11px;
+    }
+    
+    .front-post-info-wrapper {
+        flex-direction: column;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: .75rem;
+        border: 1px solid #e1e1e1;
+        border-top-width: 5px;
+        height: 170px;
+        position: relative;
+        bottom: 5px;
+        .entry-title {
+            line-height: 1.6rem;
+            a {
+                color: $color__green-brand;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+        .entry-meta {
+            margin: 5px;
+            font-family: 'Merriweather', serif;
+            font-size: .8rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
     
     .content-whole {
         margin-left: auto;

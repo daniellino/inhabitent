@@ -76,20 +76,21 @@ get_header(); ?>
 
                        // echo the_title;
                        ?>
+										<div class="front-post-info-wrapper">
+											<!-- start of front-post-info-wrapper -->
+											<div class="entry-meta">
+												<!-- .entry-meta -->
+												<?php red_starter_posted_on(); ?> /
+												<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+												
+											</div>
+											<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-										<h2 class="journal-title">
-											<?php the_title(); ?>
-										</h2>
-
-										<div class="entry-meta">
-											<?php red_starter_posted_on(); ?> /
-											<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> /
-											<?php red_starter_posted_by(); ?>
+											<div class="btn-black">
+												<a href="<?php echo the_permalink(); ?>">Read Entry</a>
+											</div>
 										</div>
-										<!-- .entry-meta -->
-										<div class="btn-black">
-											<a href="<?php echo the_permalink(); ?>">Read More</a>
-										</div>
+										<!-- end of front-post-info-wrapper-->
 								</div>
 								<div class="seperate-entries container">
 									<?php endforeach; wp_reset_postdata(); ?>

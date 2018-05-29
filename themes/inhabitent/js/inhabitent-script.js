@@ -10,9 +10,15 @@
         $('.search-field').toggleClass('search-field-focus');
         $('.search-field').focus();
         $('.search-field').on('blur', function() {
-                $('.search-field').toggleClass('search-field-focus');
-            })
-            // focus on the input field 
+            $('.search-field').toggleClass('search-field-focus');
+        })
+        document.addEventListener('keydown', function(event) {
+            if (event.keyCode === 13) {
+                $('.search-form').submit();
+            }
+        });
+
+        // focus on the input field 
 
         // listen for enter key press and submit form 
         // try to figure out the on keypress or keydown for the enter key
