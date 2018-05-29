@@ -858,6 +858,16 @@ a.read-more {
 .type-post .entry-header {
   margin-top: 3rem; }
 
+.white-btn {
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  height: auto;
+  padding: 12px 18px;
+  font-size: .9rem;
+  font-family: Novecentos, sans-serif; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1452,6 +1462,28 @@ body {
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         width: auto; }
+    .latest-adventures ul li:nth-child(3) img {
+      -webkit-transform: translate(-50%, -75%);
+              transform: translate(-50%, -75%);
+      left: 50%;
+      max-height: 367px;
+      max-width: none;
+      position: absolute;
+      top: 38%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: auto; }
+    .latest-adventures ul li:nth-child(4) img {
+      -webkit-transform: translate(-50%, -75%);
+              transform: translate(-50%, -75%);
+      left: 50%;
+      max-height: 367px;
+      max-width: none;
+      position: absolute;
+      top: 38%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: auto; }
 
 .adventure-title {
   margin: 1.5rem;
