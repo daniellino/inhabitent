@@ -158,9 +158,10 @@ get_header(); ?>
 
 		</main>
 		<!-- #main end -->
+		<a class = "btn more-adv-btn" href="#">More adventures</a>
 		</div>
 		<!-- #primary end-->
-		<a href="#">More adventures</a>
+		
 
 
 		<?php get_footer(); ?>
