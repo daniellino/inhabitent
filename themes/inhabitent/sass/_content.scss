@@ -53,7 +53,7 @@
     }
     
     .seperate-entries img {
-        width: 360px;
+        width: 362px;
         height: 246px;
     }
     
@@ -103,7 +103,7 @@
         border-top-width: 5px;
         height: 170px;
         position: relative;
-        bottom: 5px;
+        bottom: 6px;
         .entry-title {
             line-height: 1.6rem;
             a {
@@ -133,7 +133,7 @@
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(4, 1fr);
-        .entry-header img {
+        .product-image-container .entry-header img {
             width: 260px;
             height: auto;
         }
@@ -151,5 +151,22 @@
         height: auto;
         padding: 12px 18px;
         font-size: .9rem;
-        font-family: Novecentos, sans-serif;
+        font-family: 'Novecentos', sans-serif;
+    }
+    
+    h3.comment-reply-title {
+        font-size: 1.8rem;
+    }
+    
+    .logged-in-as a {
+        color: $color__text-main;
+        font-family: 'Merriweather', serif;
+    }
+    
+    .comment-form-comment {
+        font-family: 'Novecentos', sans-serif;
+        font-size: 1.1rem;
+        textarea {
+            margin-top: 1rem;
+        }
     }

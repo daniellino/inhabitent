@@ -17,7 +17,8 @@
     position: relative;
 }
 
-.single-product .entry-meta {
+.single-product .entry-meta,
+.single .entry-meta {
     background: #248a83;
     color: #fff;
     text-transform: uppercase;
@@ -27,6 +28,11 @@
     left: 271px;
     bottom: 6px;
     padding: 4px 17px;
+}
+
+.single .entry-header img {
+    width: 100%;
+    height: auto;
 }
 
 .post-template-default .entry-content {
