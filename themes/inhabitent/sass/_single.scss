@@ -57,6 +57,7 @@
 
 a.sharing-button {
     color: black;
+    font-size: .9rem;
     &:hover {
         background: $color__green-brand;
         color: #fff;
@@ -96,12 +97,3 @@ a.sharing-button {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-// .single-product .entry-meta {
-//     width: 370px;
-//     font-family: Novecentos, sans-serif;
-//     position: absolute;
-//     left: 271px;
-//     bottom: 6px;
-//     padding: 4px 17px;
-// }

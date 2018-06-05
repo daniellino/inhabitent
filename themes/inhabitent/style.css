@@ -811,6 +811,13 @@ a.read-more {
 /**************************************************
     * btn-black
     ***************************************************/
+.blog .entry-content > p {
+  margin-bottom: 4rem;
+  margin-top: 1.2rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  line-height: 1.8rem; }
+
 .page-template-default .btn-black a {
   position: absolute;
   bottom: 11px; }
@@ -1387,7 +1394,8 @@ input[type=search] {
     color: #000; }
 
 a.sharing-button {
-  color: black; }
+  color: black;
+  font-size: .9rem; }
   a.sharing-button:hover {
     background: #248A83;
     color: #fff; }
