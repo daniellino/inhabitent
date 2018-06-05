@@ -878,6 +878,9 @@ a.read-more {
     background: #248A83;
     border: 1px solid #248A83; }
 
+.adv-btn:hover {
+  color: #f0e4d1; }
+
 .btn.more-adv-btn {
   display: inline-block;
   margin: 2rem 0;
