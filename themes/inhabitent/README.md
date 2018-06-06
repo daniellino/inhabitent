@@ -14,10 +14,15 @@ WORDPRESS PLUGINS:
 
 - Custom Field Suite
 - Debug Bar
-- inhabitent Business Hours Widget
+- Inhabitent Business Hours Widget
 - Query Monitor
 - Show Current Template
+- Debug Bar
+- Inhabitent Functionality
+- Kint PHP Debugger
 - WP Migrate DB
+- Theme Check
+- Contact Form 7
 
 ### Software
 
