@@ -60,6 +60,7 @@ a.sharing-button {
     font-size: .9rem;
     &:hover {
         background: $color__green-brand;
+        border-color: $color__green-brand;
         color: #fff;
         .fab {
             color: #fff;
@@ -96,7 +97,27 @@ a.sharing-button {
     color: $color__green-brand;
 }
 
-.single-product-flex-wrapper {
+.single-product .hentry {
+    .entry-title {
+        // margin-bottom: 1rem;
+        font-size: 2.4rem;
+        color: $color__orange-brand;
+    }
+    .product-price-container {
+        font-family: Novecentos, sans-serif;
+        font-size: 1.8rem;
+    }
+    margin: 3rem 0;
+    img {
+        padding-right: 1rem;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr;
+    .product-content-wrapper {
+        padding-left: 1rem;
+    }
+    .entry-content p {
+        line-height: 1.85;
+        font-family: 'Merriweather', Courier, serif;
+    }
 }

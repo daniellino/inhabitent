@@ -1412,6 +1412,7 @@ a.sharing-button {
   font-size: .9rem; }
   a.sharing-button:hover {
     background: #248A83;
+    border-color: #248A83;
     color: #fff; }
     a.sharing-button:hover .fab {
       color: #fff; }
@@ -1443,9 +1444,23 @@ a.sharing-button {
   text-transform: uppercase;
   color: #248A83; }
 
-.single-product-flex-wrapper {
+.single-product .hentry {
+  margin: 3rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .single-product .hentry .entry-title {
+    font-size: 2.4rem;
+    color: #d99054; }
+  .single-product .hentry .product-price-container {
+    font-family: Novecentos, sans-serif;
+    font-size: 1.8rem; }
+  .single-product .hentry img {
+    padding-right: 1rem; }
+  .single-product .hentry .product-content-wrapper {
+    padding-left: 1rem; }
+  .single-product .hentry .entry-content p {
+    line-height: 1.85;
+    font-family: 'Merriweather', Courier, serif; }
 
 body {
   font-size: 16px; }
