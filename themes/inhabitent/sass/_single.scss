@@ -109,15 +109,36 @@ a.sharing-button {
     }
     margin: 3rem 0;
     img {
-        padding-right: 1rem;
+        padding-right: 1.2rem;
     }
     display: grid;
     grid-template-columns: 1fr 1fr;
     .product-content-wrapper {
-        padding-left: 1rem;
+        padding-left: 1.2rem;
     }
     .entry-content p {
         line-height: 1.85;
         font-family: 'Merriweather', Courier, serif;
+    }
+}
+
+.page-numbers {
+    background: #248a83;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Novecentos', sans-serif;
+    font-size: 1rem;
+    padding: .75rem .75rem;
+    text-transform: uppercase;
+    margin: .1rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    &:hover {
+        background: $color__purple-brand;
+    }
+    &.current {
+        background: gray;
     }
 }

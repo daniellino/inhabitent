@@ -467,7 +467,8 @@ table {
 
 .search div.entry-summary {
   font-family: 'Merriweather', serif;
-  padding-right: 66px; }
+  padding-right: 66px;
+  line-height: 1.8rem; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -727,6 +728,7 @@ a {
   font-size: .9rem; }
 
 .search-pagination {
+  padding-top: 2rem;
   margin-top: 6rem;
   margin-bottom: 4rem;
   border-top: 1px solid #ccc; }
@@ -1343,7 +1345,8 @@ input[type=search] {
   border-bottom: 1px solid #ccc;
   margin-top: 50px;
   padding-bottom: 2rem;
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  margin-bottom: -37px; }
 
 .search-results .entry-header a {
   color: #248A83;
@@ -1455,12 +1458,30 @@ a.sharing-button {
     font-family: Novecentos, sans-serif;
     font-size: 1.8rem; }
   .single-product .hentry img {
-    padding-right: 1rem; }
+    padding-right: 1.2rem; }
   .single-product .hentry .product-content-wrapper {
-    padding-left: 1rem; }
+    padding-left: 1.2rem; }
   .single-product .hentry .entry-content p {
     line-height: 1.85;
     font-family: 'Merriweather', Courier, serif; }
+
+.page-numbers {
+  background: #248a83;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Novecentos', sans-serif;
+  font-size: 1rem;
+  padding: .75rem .75rem;
+  text-transform: uppercase;
+  margin: .1rem;
+  padding-left: .8rem;
+  padding-right: .8rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem; }
+  .page-numbers:hover {
+    background: #2f1339; }
+  .page-numbers.current {
+    background: gray; }
 
 body {
   font-size: 16px; }
