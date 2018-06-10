@@ -1,0 +1,43 @@
+.comment-author-avatar {
+    border-radius: 50%;
+    height: 64px;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    width: 64px;
+}
+
+.comment-body {
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.comment-metadata {
+    margin-top: .5rem;
+    color: gray;
+    a {
+        color: $color__green-brand;
+    }
+}
+
+.comment-author .fn {
+    font-weight: 700;
+    font-style: normal;
+}
+
+ul.children {
+    padding-top: 1.5rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.comment-reply-link {
+    //reply link
+    color: $color__green-brand;
+    min-width: 5rem;
+    &:hover {
+        color: $color__purple-brand;
+    }
+}

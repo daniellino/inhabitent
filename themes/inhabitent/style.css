@@ -1520,6 +1520,43 @@ a.sharing-button {
   .page-numbers.current {
     background: gray; }
 
+.comment-author-avatar {
+  border-radius: 50%;
+  height: 64px;
+  margin-right: 1.5rem;
+  overflow: hidden;
+  width: 64px; }
+
+.comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 2rem;
+  font-family: 'Merriweather', serif; }
+
+.comment-metadata {
+  margin-top: .5rem;
+  color: gray; }
+  .comment-metadata a {
+    color: #248A83; }
+
+.comment-author .fn {
+  font-weight: 700;
+  font-style: normal; }
+
+ul.children {
+  padding-top: 1.5rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 2rem; }
+
+.comment-reply-link {
+  color: #248A83;
+  min-width: 5rem; }
+  .comment-reply-link:hover {
+    color: #2f1339; }
+
 body {
   font-size: 16px; }
 
