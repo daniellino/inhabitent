@@ -397,10 +397,12 @@ table {
   border: 1px solid #000;
   padding: 12px 18px; }
 
-.blog .entry-header {
+.blog .entry-header,
+.date .entry-header {
   position: relative; }
 
-.blog .entry-meta {
+.blog .entry-meta,
+.date .entry-meta {
   background: #248A83;
   color: #fff;
   text-transform: uppercase;
@@ -411,14 +413,17 @@ table {
   bottom: 6px;
   padding: 4px 17px; }
 
-.blog .entry-title {
+.blog .entry-title,
+.date .entry-title {
   font-family: 'Merriweather', serif; }
 
-.blog img {
+.blog img,
+.date img {
   height: auto;
   max-width: 100%; }
 
-.blog .entry-header h2 {
+.blog .entry-header h2,
+.date .entry-header h2 {
   background: #248A83;
   font-family: 'Novecentos', sans-serif;
   letter-spacing: 2px;
@@ -428,7 +433,8 @@ table {
   position: absolute;
   top: 0px;
   right: 288px; }
-  .blog .entry-header h2 a:hover {
+  .blog .entry-header h2 a:hover,
+  .date .entry-header h2 a:hover {
     color: #f0e4d1; }
 
 .search h1.page-title {
