@@ -827,6 +827,16 @@ a.read-more {
   font-size: 1rem;
   line-height: 1.8rem; }
 
+.date .page-header {
+  height: 1.5rem;
+  padding-bottom: 3rem; }
+  .date .page-header h1 {
+    margin-top: 66px;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1rem;
+    margin-bottom: 0px; }
+
 .blog .entry-content p:nth-of-type(2),
 .date .entry-content p:nth-of-type(2) {
   margin-bottom: 5rem; }
