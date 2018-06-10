@@ -38,3 +38,8 @@
     margin-top: 24px;
     margin-left: 200px;
 }
+
+[href~="h"]:hover,
+[href*="tel"]:hover {
+    text-decoration: underline;
+}

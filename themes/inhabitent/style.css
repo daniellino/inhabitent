@@ -1176,6 +1176,10 @@ object {
   margin-top: 24px;
   margin-left: 200px; }
 
+[href~="h"]:hover,
+[href*="tel"]:hover {
+  text-decoration: underline; }
+
 .site-header .content-whole {
   -webkit-box-align: center;
       -ms-flex-align: center;
