@@ -925,22 +925,6 @@ h3.comment-reply-title {
   .comment-form-comment textarea {
     margin-top: 1rem; }
 
-/**************************************************
-    * Find us
-    ***************************************************/
-.post-25 .entry-title {
-  font-size: 2.5rem;
-  margin-top: 2rem; }
-
-.post-25 .entry-content h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  color: #2f1339; }
-
-.post-25 .entry-content p:nth-of-type(2) {
-  font-size: 1rem;
-  font-family: 'Merriweather', serif; }
-
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1557,6 +1541,53 @@ ul.children {
   .comment-reply-link:hover {
     color: #2f1339; }
 
+/**************************************************
+    * Find us
+    ***************************************************/
+.page-template-default .page .entry-title {
+  font-size: 2.5rem;
+  margin-top: 2rem; }
+
+.page-template-default .page .entry-content p:nth-of-type(2) {
+  font-family: 'Merriweather', serif; }
+
+.page-template-default .page .entry-content h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #2f1339; }
+
+.wpcf7-form {
+  font-family: 'Novecentos', sans-serif; }
+  .wpcf7-form input[type=submit] {
+    min-width: 100px;
+    font-weight: 100;
+    text-shadow: none;
+    margin-bottom: 6rem; }
+    .wpcf7-form input[type=submit]:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
+input[type=text],
+input[type=url],
+input[type=email],
+textarea {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  padding: .5rem; }
+
+label {
+  color: #2f1339;
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  font-family: 'Novecentos', sans-serif; }
+
+.asterisk {
+  color: #d99054; }
+
 body {
   font-size: 16px; }
 
@@ -1690,7 +1721,8 @@ li {
   .product-type-blocks img {
     width: 70px; }
 
-.btn {
+.btn,
+input[type="submit"] {
   background: #248a83;
   border: none;
   border-radius: 0;
@@ -1704,7 +1736,9 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   min-width: 145px;
-  max-width: 145px; }
+  max-width: 145px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .product-type-block-wrapper:hover {
   border-color: #d99054; }

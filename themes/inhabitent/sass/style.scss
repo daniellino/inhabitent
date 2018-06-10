@@ -67,6 +67,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "search";
 @import "single";
 @import "comments";
+@import "contact";
 body {
     font-size: 16px;
 }
@@ -224,7 +225,8 @@ li {
     }
 }
 
-.btn {
+.btn,
+input[type="submit"] {
     background: #248a83;
     border: none;
     border-radius: 0;
@@ -239,6 +241,7 @@ li {
     text-transform: uppercase;
     min-width: 145px;
     max-width: 145px;
+    box-shadow: none;
 }
 
 .product-type-block-wrapper:hover {
