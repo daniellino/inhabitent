@@ -700,7 +700,8 @@ a {
   display: none; }
 
 .icon-search {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #248A83; }
 
 .widget-area {
   padding-left: 70px;
@@ -801,7 +802,7 @@ a {
   .home-banner img {
     position: absolute;
     margin: auto;
-    top: 12rem;
+    top: 1rem;
     left: 0;
     right: 0;
     bottom: 0; }
@@ -1286,11 +1287,11 @@ object {
   -ms-transform: rotateY(180deg); }
 
 .fab {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: .5rem; }
 
 .fas {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-right: .5rem; }
 
 .copy-right {
@@ -1412,6 +1413,8 @@ input[type=search] {
     height: 50px; }
   .site-header a {
     color: #248A83; }
+    .site-header a:hover {
+      color: #2f1339; }
   .site-header .logo-white {
     display: none; }
   .site-header .logo-green {
@@ -1423,7 +1426,6 @@ input[type=search] {
 .product-template-default .search-submit,
 .search .search-submit,
 .error404 .search-submit {
-  color: #248A83;
   text-shadow: none; }
 
 .home .site-header,
@@ -1433,17 +1435,22 @@ input[type=search] {
   text-shadow: 1px 1px 2px #323232;
   position: absolute;
   left: 0;
-  right: 0;
-  top: 32px; }
+  right: 0; }
   .home .site-header a,
   .page-template-about .site-header a {
     color: #fff; }
+    .home .site-header a:hover,
+    .page-template-about .site-header a:hover {
+      color: #f0e4d1; }
   .home .site-header .logo-white,
   .page-template-about .site-header .logo-white {
     display: block; }
   .home .site-header .logo-green,
   .page-template-about .site-header .logo-green {
     display: none; }
+  .home .site-header .icon-search,
+  .page-template-about .site-header .icon-search {
+    color: #fff; }
 
 .site-header .search-form {
   display: -webkit-box;
@@ -1454,7 +1461,8 @@ input[type=search] {
   display: none; }
 
 .site-header .search-field-focus {
-  display: block; }
+  display: block;
+  margin-top: 6px; }
 
 /*--------------------------------------------------------------
 # Error 404 page styling

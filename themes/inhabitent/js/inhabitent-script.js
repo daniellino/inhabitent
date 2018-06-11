@@ -5,7 +5,7 @@
     $('.search-submit').on('click', function(event) {
         event.preventDefault();
 
-        // $('.search-field').hide();
+
 
         $('.search-field').toggleClass('search-field-focus');
         $('.search-field').focus();
