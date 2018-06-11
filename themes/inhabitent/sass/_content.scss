@@ -217,6 +217,20 @@
         font-weight: 400;
         text-transform: capitalize;
     }
+    
+    .product-info .container {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .product-type-blocks {
+        display: grid;
+        grid-gap: 1.4em;
+        grid-template-columns: repeat(4, 1fr);
+        img {
+            width: 70px;
+        }
+    }
     /**************************************************
     * btn-black
     ***************************************************/

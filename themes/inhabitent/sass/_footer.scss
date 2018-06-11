@@ -56,7 +56,7 @@
     margin-left: 200px;
 }
 
-[href~="h"]:hover,
-[href*="tel"]:hover {
+.contact [href~="h"]:hover,
+.contact [href*="tel"]:hover {
     text-decoration: underline;
 }

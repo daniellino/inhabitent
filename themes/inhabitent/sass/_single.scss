@@ -115,6 +115,10 @@ a.sharing-button {
     grid-template-columns: 1fr 1fr;
     .product-content-wrapper {
         padding-left: 1.2rem;
+        h1.entry-title {
+            margin-top: -12px;
+            padding-top: 0px;
+        }
     }
     .entry-content p {
         line-height: 1.85;
