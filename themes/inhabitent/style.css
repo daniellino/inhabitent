@@ -1545,6 +1545,15 @@ ul.children {
   .comment-reply-link:hover {
     color: #2f1339; }
 
+.comment-form input[type=submit] {
+  min-width: 95px; }
+
+.comment-form > p {
+  font-family: 'Merriweather', serif; }
+
+.comment-form-url input {
+  width: 100%; }
+
 /**************************************************
     * Find us
     ***************************************************/
@@ -1589,8 +1598,23 @@ label {
   text-transform: uppercase;
   font-family: 'Novecentos', sans-serif; }
 
-.asterisk {
+.asterisk,
+.required {
   color: #d99054; }
+
+.comment-form-author {
+  float: left;
+  width: 49%;
+  margin-right: .9rem; }
+  .comment-form-author input {
+    width: 100%; }
+
+.comment-form-email {
+  display: inline-block;
+  clear: left;
+  width: 49%; }
+  .comment-form-email input {
+    width: 100%; }
 
 body {
   font-size: 16px; }

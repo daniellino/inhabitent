@@ -53,6 +53,25 @@ label {
     font-family: 'Novecentos', sans-serif;
 }
 
-.asterisk {
+.asterisk,
+.required {
     color: $color__orange-brand;
+}
+
+.comment-form-author {
+    float: left;
+    width: 49%;
+    margin-right: .9rem;
+    input {
+        width: 100%;
+    }
+}
+
+.comment-form-email {
+    display: inline-block;
+    clear: left;
+    width: 49%;
+    input {
+        width: 100%;
+    }
 }

@@ -41,3 +41,18 @@ ul.children {
         color: $color__purple-brand;
     }
 }
+
+.comment-form {
+    input[type=submit] {
+        min-width: 95px;
+    }
+    &>p {
+        font-family: 'Merriweather', serif;
+    }
+}
+
+.comment-form-url {
+    input {
+        width: 100%;
+    }
+}
