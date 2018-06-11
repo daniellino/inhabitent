@@ -1,3 +1,20 @@
+.fa-phone {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+
+.fab {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
+.fas {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
 .copy-right {
     position: relative;
     bottom: 40px;
