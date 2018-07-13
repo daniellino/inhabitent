@@ -890,6 +890,8 @@ a {
   margin: 1.5rem;
   position: absolute;
   z-index: 2; }
+  .adventure-title a {
+    color: #fff; }
 
 .product-type-block-wrapper {
   display: grid;
@@ -1744,7 +1746,8 @@ ul.children {
     margin-bottom: 6rem; }
     .wpcf7-form input[type=submit]:hover {
       -webkit-box-shadow: none;
-              box-shadow: none; }
+              box-shadow: none;
+      background: #19625d; }
 
 input[type=text],
 input[type=url],
